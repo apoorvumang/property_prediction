@@ -1,0 +1,21 @@
+python main.py --gpu 5 --num_layers 2 --embedding_dim 100 \
+               --fold 0 --lr 0.00001 --batch_size 128 \
+               --num_hidden_nodes 256 --dropout 0.5 --dataset for_submission
+
+python main.py --gpu 4 --num_layers 2 --embedding_dim 100 \
+               --dataset covid --lr 0.001 --batch_size 1024 \
+               --num_hidden_nodes 256 --dropout 0.1 --validate_every 2
+
+
+
+Best valid: 0.7387270319938386 Best test: 0.1202192349661269 Fold: 0
+Best valid: 0.8274341077267771 Best test: 0.10576571398444574 Fold: 0
+
+
+Best valid: 0.757081038552321 Best test: 0.7675602668770368 Fold: 1
+
+Best valid: 0.5095862381109367 Best test: 0.32924718052683605 Fold: 2
+
+Best valid: 1.0 Best test: 0.27451309961170456 Fold: 3
+
+Best valid: 0.6717294900221729 Best test: 0.860665478312537 Fold: 4
